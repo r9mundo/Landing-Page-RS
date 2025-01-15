@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/* Estilo do cabeçalho */
 header {
     background: linear-gradient(120deg, #00ff99, #005940);
     color: #fff;
@@ -32,7 +30,6 @@ header p {
     font-size: 1.5rem;
     opacity: 0.9;
 }
-
 
 /* Imagem de perfil */
 .profile-picture {
@@ -66,6 +63,30 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+
+nav a[href="#sobre"],
+nav a[href="#skills"],
+nav a[href="#projetos"],
+nav a[href="#contato"] {
+    font-size: 2.5rem; 
+    color: #00ff99; 
+    transition: color 0.3s, transform 0.3s; /* Transições suaves */
+    text-transform: uppercase; /* Letras maiúsculas */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Garantindo hover consistente */
+    margin: 0 1.5rem; /* Espaçamento uniforme */
+}
+
+nav a[href="#sobre"]:hover,
+nav a[href="#skills"]:hover,
+nav a[href="#projetos"]:hover,
+nav a[href="#contato"]:hover {
+    color: #33ffcc; 
+    transform: scale(1.2); 
+    cursor: pointer; 
+}
+
+
 /* Container principal */
 .container {
     max-width: 1200px;
@@ -82,6 +103,7 @@ nav a:hover {
     margin-bottom: 3rem;
     box-shadow: 0 0 15px #00ff99;
     transition: transform 0.3s;
+    
 }
 
 .sobre:hover, .skills:hover, .contato:hover, .projetos:hover {
